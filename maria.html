@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <style>
+            header{
+                background-color:#D7AA9E;
+                color: #0A2D16;
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 1px;
+                border: 3px solid #9E4C35;
+            }
+            main{
+                background-color:#E6B1FF;
+                color: #4A054F;
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 1px;
+                display: flex;
+                border: 3px solid #5A3C68;
+            }
+            img{
+                width: 200px;
+                height: 300px;
+            }
+            .artigo-autor{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Vamos construir o conteúdo da página -->
+        <header>
+        <h1 >maria</h1>
+        <p>1º ano do ensino médio</p>
+        </header>
+        <main>
+           <div>
+            <h2>Post de entrada</h2>
+            <p class="artigo-autor">maria</p>
+            <ol>
+            <li>
+            <p>Aqui vou compartilhar conteúdos relacionados à TEMA DE INTERESSE</p>
+            </li>
+            <li>
+            <p>Encontre aqui, também, posts sobre AULAS DE PROGRAMAÇÃO</p>
+            </li>
+            </ol>
+            </div>
+           
+            <div>
+            <h3>Área de apresentação</h3><br>
+            <ul>
+            <li>
+            <a href="LINK DO SITE QUE VOCÊ ESCOLHEU">CLICK AQUI PARA ACESSAR O SITE</a><br>
+            </li>
+            <li>
+            <img src="NOMEDAIMAGEM.jpg" alt="DESCRIÇÃO DA IMAGEM">
+            </li>
+            <button>❤️ <span> 0 </span>​ </button>
+            </ul>
+            </div>
+        </main>
+    </body>
+    <script>
+        const botao = document.querySelector("button");
+        botao.addEventListener("click", botaoClicado);
+
+        function botaoClicado(){
+            console.log("Fui clicado!");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    </script>
+</html>
